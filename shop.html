@@ -2,9 +2,11 @@
 <html>
 
 <head>
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width , initial-scale=1.0">
 	<title>ContreeBute </title>
 	<link rel="stylesheet" type="text/css" href="./css/shopstyle.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -31,13 +33,13 @@
 				<img src="./Images/images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
 			</div>
 			<div class="row">
-				<div class="col-2">
+				<div class="col-2" data-aos="fade-up" data-aos-duration="1000">
 					<h1>ContreeBute Something<br> towards Nature !!!</h1>
 
 					<p>Nature, in the broadest sense, is the natural<br> physical, or material world or universe.</p>
 					<a href="" class="btn">Explore Now &#8594;</a>
 				</div>
-				<div class="col-2">
+				<div class="col-2" data-aos="fade-down" data-aos-duration="1200">
 					<img src="./Images/shop.svg" alt="">
 				</div>
 			</div>
@@ -48,13 +50,13 @@
 	<div class="categories">
 		<div class="small-container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-3" data-aos="fade-left" data-aos-duration="1200">
 					<img src="./Images/images/category-1.jpg" alt="">
 				</div>
-				<div class="col-3">
+				<div class="col-3" data-aos="fade-up" data-aos-duration="1200">
 					<img src="./Images/images/category-2.jpg" alt="">
 				</div>
-				<div class="col-3">
+				<div class="col-3" data-aos="fade-right" data-aos-duration="1200">
 					<img src="./Images/images/category-3.jpg" alt="">
 				</div>
 			</div>
@@ -63,7 +65,7 @@
 	</div>
 
 	<!-- Featured Products -->
-	<div class="small-container">
+	<div class="small-container" data-aos="fade-up" data-aos-duration="1200">
 		<h2 class="title">Featured Products</h2>
 		<div class="row">
 			<div class="col-4">
@@ -220,7 +222,7 @@
 	</div>
 
 	<!-- Offers Products -->
-	<div class="offer">
+	<div class="offer" data-aos="fade-right" data-aos-duration="1800">
 		<div class="small-container">
 			<div class="row">
 				<div class="col-2">
@@ -239,7 +241,7 @@
 	</div>
 
 	<!-- Testimonial -->
-	<div class="testimonial">
+	<div class="testimonial" data-aos="fade-up" data-aos-duration="1500">
 		<div class="small-container">
 			<div class="row">
 				<div class="col-3">
@@ -298,7 +300,7 @@
 	</div>
 
 	<!-- Brands -->
-	<div class="brands">
+	<div class="brands" data-aos="fade-down" data-aos-duration="1500">
 		<div class="small-container">
 			<div class="row">
 				<div class="col-5">
@@ -365,6 +367,10 @@
 
 
 	<script src="./js/menu.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	  <script>
+		AOS.init();
+	  </script>
 
 
 </body>
