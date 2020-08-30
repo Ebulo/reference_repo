@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>Cart--Contreebute</title>
+	<link rel="stylesheet" type="text/css" href="./css/shopstyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- Header -->
+	
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Images/logo_PNG.png" width="180">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Return</a></li>
+                </ul>
+            </nav>
+            <img src="./Images/cart_icon.svg" alt="" width="30px" height="30px">
+            <img src="./Images/images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- cart item details -->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./Images/images/buy-1.jpg" alt="">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <p style="color: #00ff55;">in Stroke</p>
+                            <small>Price: &#8377; 499 /-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377; 499/-</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./Images/images/buy-2.jpg" alt="">
+                        <div>
+                            <p>Branded Shoe</p>
+                            <p style="color: #00ff55;">in Stroke</p>
+                            <small>Price: &#8377; 1499 /-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377; 1499/-</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="./Images/images/buy-3.jpg" alt="">
+                        <div>
+                            <p>Braned Pants</p>
+                            <p style="color: #00ff55;">in Stroke</p>
+                            <small>Price: &#8377; 799 /-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377; 799/-</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>&#8377; 2797 /-</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>&#8377; 223.79 /-</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>&#8377; 3020.79 /-</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+	<!-- Footer  -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download App for Android and ios mobile phone</p>
+					<div class="app-logo">
+						<img src="./Images/images/play-store.png" alt="">
+						<img src="./Images/images/app-store.png" alt="">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="./Images/Symbol.png" alt="" height="100px">
+					<p>Monitor the eco-usage of your money. A part of your bill will be used in evening the venture.You
+						have the liberty to choosen which product.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Userful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate </li>
+						<li>Be a YFS Member</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>LinkedIn</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">all rights reserved &copy; YouthForSustainablity</p>
+		</div>
+	</div>
+
+    
+    <script src="./js/menu.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	  <script>
+		AOS.init();
+	  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>All Products -- ContreeBute </title>
+	<link rel="stylesheet" type="text/css" href="./css/shopstyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script>
+
+        // function change()
+        // {
+        //     var ProductImg = document.getElementById("ProductImg");
+        //     ProductImg.src = 'Images/images/gallery-1.jpg';
+        // }
+        // function change1()
+        // {
+        //     var ProductImg = document.getElementById("ProductImg");
+        //     ProductImg.src = 'Images/images/gallery-2.jpg';
+        // }
+        // function change2()
+        // {
+        //     var ProductImg = document.getElementById("ProductImg");
+        //     ProductImg.src = 'Images/images/gallery-3.jpg';
+        // }
+        // function change3()
+        // {
+        //     var ProductImg = document.getElementById("ProductImg");
+        //     ProductImg.src = 'Images/images/gallery-4.jpg';
+        // }
+    </script> -->
+</head>
+
+<body>
+	<!-- Header -->
+	
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Images/logo_PNG.png" width="180">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Return</a></li>
+                </ul>
+            </nav>
+            <img src="./Images/cart_icon.svg" alt="" width="30px" height="30px">
+            <img src="./Images/images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!-- single product details -->
+
+    <div class="small-container single-product">
+        <div class="row">
+    <div class="col-2" data-aos="fade-right" data-aos-duration="1500">
+        <img src="Images/images/gallery-1.jpg" alt="" width="100%" id="ProductImg" >
+        <div class="small-img-row">
+        <div class="small-img-col">
+            <img src="Images/images/gallery-1.jpg" alt="" width="100%" class="small-img" onclick="change()">
+        </div>
+        <div class="small-img-col">
+            <img src="Images/images/gallery-2.jpg" alt="" width="100%" class="small-img" onclick="change1()">
+        </div>
+        <div class="small-img-col">
+            <img src="Images/images/gallery-3.jpg" alt="" width="100%" class="small-img" onclick="change2()">
+        </div>
+        <div class="small-img-col">
+            <img src="Images/images/gallery-4.jpg" alt="" width="100%" class="small-img" onclick="change3()">
+        </div>
+        </div>
+    </div>
+            <div class="col-2" data-aos="fade-left" data-aos-duration="1200">
+                <p>Home / T-Shirt</p>
+                <h1>Red Printed T-shirt</h1>
+                <h4>&#8377; 499/-</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn_add">Add to Cart</a>
+                <a href="" class="btn_buy">Buy Now &#8594;</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Give your summer wardrobe a style upgrade with the XSX
+                    Men's Active T-Shirt . Team it with a pair of shorts for 
+                    your morning workout or a denims for an evening out with 
+                    the guys.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More &#8594;</p>
+        </div>
+    </div>
+
+	<!-- products -->
+	<div class="small-container" data-aos="fade-up" data-aos-duration="1800">
+        <div class="row">
+            <div class="col-4">
+                <img src="Images/images/product-9.jpg" alt="">
+                <h4>Branded watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>&#8377; 499/-</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/images/product-10.jpg" alt="">
+                <h4>Branded Shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>&#8377; 499/-</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/images/product-11.jpg" alt="">
+                <h4>Branded Shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>&#8377; 299/-</p>
+            </div>
+            <div class="col-4">
+                <img src="Images/images/product-12.jpg" alt="">
+                <h4>Branded pants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>&#8377; 1499/-</p>
+            </div>
+        </div>
+	</div>
+
+
+	<!-- Footer  -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download App for Android and ios mobile phone</p>
+					<div class="app-logo">
+						<img src="./Images/images/play-store.png" alt="">
+						<img src="./Images/images/app-store.png" alt="">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="./Images/Symbol.png" alt="" height="100px">
+					<p>Monitor the eco-usage of your money. A part of your bill will be used in evening the venture.You
+						have the liberty to choosen which product.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Userful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate </li>
+						<li>Be a YFS Member</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>LinkedIn</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">all rights reserved &copy; YouthForSustainablity</p>
+		</div>
+	</div>
+
+    
+    <script src="./js/menu.js"></script>
+    <script src="./js/product.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	  <script>
+		AOS.init();
+	  </script>
+
+
+</body>
+
+</html>
